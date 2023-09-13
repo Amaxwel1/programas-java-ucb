@@ -50,12 +50,24 @@
                                       <Component id="jRvotar2" alignment="0" min="-2" max="-2" attributes="0"/>
                                       <Component id="jBcalcularVoto" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
+                                  <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
                   </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                      <Component id="jBfinalizar" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLresultvotos40" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLresultvotos44" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLmaisvotos" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLqtdfunc" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
               </Group>
-              <EmptySpace pref="87" max="32767" attributes="0"/>
+              <EmptySpace pref="41" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -74,12 +86,25 @@
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="jRvotar1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="jRvotar2" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="jBcalcularVoto" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="50" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Component id="jRvotar1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jRvotar2" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jBcalcularVoto" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jLresultvotos40" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jLresultvotos44" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jLmaisvotos" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jLqtdfunc" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="jBfinalizar" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="32" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -150,6 +175,43 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="jTmatricula">
+    </Component>
+    <Component class="javax.swing.JButton" name="jBfinalizar">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="cc" red="0" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="14" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="FINALIZAR A VOTA&#xc7;&#xc3;O"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBfinalizarActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLresultvotos40">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Quantidade de votos em (40 horas): "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLresultvotos44">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Quantidade de votos em (44 horas): "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLmaisvotos">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Op&#xe7;&#xe3;o com mais votos: "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLqtdfunc">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Quantidade de funcion&#xe1;rios que votaram: "/>
+      </Properties>
     </Component>
   </SubComponents>
 </Form>

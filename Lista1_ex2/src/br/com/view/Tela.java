@@ -37,6 +37,11 @@ public class Tela extends javax.swing.JFrame {
         jBcalcularVoto = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jTmatricula = new javax.swing.JTextField();
+        jBfinalizar = new javax.swing.JButton();
+        jLresultvotos40 = new javax.swing.JLabel();
+        jLresultvotos44 = new javax.swing.JLabel();
+        jLmaisvotos = new javax.swing.JLabel();
+        jLqtdfunc = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -67,6 +72,24 @@ public class Tela extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel4.setText("Digite sua matricula para votar: ");
 
+        jBfinalizar.setBackground(new java.awt.Color(0, 204, 0));
+        jBfinalizar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jBfinalizar.setForeground(new java.awt.Color(255, 255, 255));
+        jBfinalizar.setText("FINALIZAR A VOTAÇÃO");
+        jBfinalizar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBfinalizarActionPerformed(evt);
+            }
+        });
+
+        jLresultvotos40.setText("Quantidade de votos em (40 horas): ");
+
+        jLresultvotos44.setText("Quantidade de votos em (44 horas): ");
+
+        jLmaisvotos.setText("Opção com mais votos: ");
+
+        jLqtdfunc.setText("Quantidade de funcionários que votaram: ");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -93,8 +116,18 @@ public class Tela extends javax.swing.JFrame {
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addComponent(jRvotar1)
                                         .addComponent(jRvotar2)
-                                        .addComponent(jBcalcularVoto)))))))
-                .addContainerGap(87, Short.MAX_VALUE))
+                                        .addComponent(jBcalcularVoto))
+                                    .addGap(68, 68, 68)))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(35, 35, 35)
+                        .addComponent(jBfinalizar)
+                        .addGap(42, 42, 42)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLresultvotos40)
+                            .addComponent(jLresultvotos44)
+                            .addComponent(jLmaisvotos)
+                            .addComponent(jLqtdfunc))))
+                .addContainerGap(41, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -110,12 +143,23 @@ public class Tela extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel3)
                 .addGap(18, 18, 18)
-                .addComponent(jRvotar1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jRvotar2)
-                .addGap(18, 18, 18)
-                .addComponent(jBcalcularVoto)
-                .addContainerGap(50, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jRvotar1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jRvotar2)
+                        .addGap(18, 18, 18)
+                        .addComponent(jBcalcularVoto)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLresultvotos40)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLresultvotos44)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLmaisvotos)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLqtdfunc))
+                    .addComponent(jBfinalizar))
+                .addContainerGap(32, Short.MAX_VALUE))
         );
 
         pack();
@@ -126,32 +170,35 @@ public class Tela extends javax.swing.JFrame {
         v.setMatricula(jTmatricula.getText());
          if(jTmatricula.getText().equals("")){
              JOptionPane.showMessageDialog(rootPane, "campo obrigatorio!");
+             jTmatricula.setText("");
              jTmatricula.requestFocus();
-         } else { 
-      
+         } else {      
+        jTmatricula.setText("");
+        jTmatricula.requestFocus();
         if(jRvotar1.isSelected()){
             v.votar1();
-            JOptionPane.showMessageDialog(rootPane,"Voto registrado com sucesso!" + v.getVotos40(), "Confirmação", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(rootPane,"Voto registrado com sucesso!", "Confirmação", JOptionPane.INFORMATION_MESSAGE);
             jRvotar1.setSelected(false);
         }else if (jRvotar2.isSelected()){
             v.votar2();
-            JOptionPane.showMessageDialog(rootPane,"Voto registrado com sucesso!" + v.getVotos44(), "Confirmação", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(rootPane,"Voto registrado com sucesso!", "Confirmação", JOptionPane.INFORMATION_MESSAGE);
             jRvotar2.setSelected(false);
         } else {
            JOptionPane.showMessageDialog(rootPane, "É necessário votar em um horario!!"); 
         }
         
-        while(v.getNumFunc() < 5){
-            if(v.getNumFunc() > 5){
-               JOptionPane.showMessageDialog(rootPane,"Quantidade de Votos em 40 Horas\n" + v.getVotos40() +
-                                                                  "Quantidade de Votos em 44 Horas" + v.getVotos44()
-                       
-                       , "Confirmação", JOptionPane.INFORMATION_MESSAGE);
-            } 
-        }
-        
       }
     }//GEN-LAST:event_jBcalcularVotoActionPerformed
+
+    private void jBfinalizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBfinalizarActionPerformed
+        // TODO add your handling code here:
+        jLresultvotos40.setText("Quantidade de votos em (40 horas): "+v.getVotos40());
+        jLresultvotos44.setText("Quantidade de votos em (44 horas): "+v.getVotos44());
+        if(v.getVotos40() > v.getVotos44()){
+            jLmaisvotos.setText("Opção com mais votos é 40 horas com "+v.getVotos40());
+        } else jLmaisvotos.setText("Opção com mais votos é 44 horas com "+v.getVotos44());
+        jLqtdfunc.setText("Quantidade de funcionários que votaram: "+(v.getVotos40()+v.getVotos44()));
+    }//GEN-LAST:event_jBfinalizarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -190,10 +237,15 @@ public class Tela extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jBcalcularVoto;
+    private javax.swing.JButton jBfinalizar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLmaisvotos;
+    private javax.swing.JLabel jLqtdfunc;
+    private javax.swing.JLabel jLresultvotos40;
+    private javax.swing.JLabel jLresultvotos44;
     private javax.swing.JRadioButton jRvotar1;
     private javax.swing.JRadioButton jRvotar2;
     private javax.swing.JTextField jTmatricula;
