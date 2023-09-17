@@ -46,26 +46,12 @@ public class Pessoa {
             this.contSistema++;      
     }
     
-    public int getQtdPessoasMenor40() {
-        return qtdPessoasMenor40;
-    }
-
-    
     public int getSup50anos() {
         return sup50anos;
     }
 
     public int getContSistema() {
         return contSistema;
-    }
-
-    public int getQtdPessoas() {
-        return qtdPessoas;
-    }
-
-
-    public int getQtdPessoas1020() {
-        return qtdPessoas1020;
     }
     
     public int getIdade() {
