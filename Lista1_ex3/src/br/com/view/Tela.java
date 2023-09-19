@@ -82,7 +82,7 @@ public class Tela extends javax.swing.JFrame {
         jLcontSistema.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLcontSistema.setText("Quantas vezes o sistema rodou:");
 
-        jLabel10.setIcon(new javax.swing.ImageIcon("C:\\Users\\Alexm\\Downloads\\pessoas.png")); // NOI18N
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/view/pessoas.png"))); // NOI18N
 
         jBiniciar.setBackground(new java.awt.Color(51, 153, 255));
         jBiniciar.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
