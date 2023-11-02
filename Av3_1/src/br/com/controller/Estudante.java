@@ -11,12 +11,26 @@ package br.com.controller;
 public class Estudante extends Pessoa {
     private String estatuto;
     private double media;
+    
+    public Estudante(){}
+    
+    public Estudante(String estatuto, double media){
+        this.media = media;
+        this.estatuto = estatuto;
+    }
 
-    public double calcularMedia(double nota1, double nota2){
-       return this.media = (nota1 + nota2)/2;
+    @Override
+    public String toString() {
+        return "Estudante - "+ getNome() + "\n" + "Estatuto: " + estatuto + "\nMédia: " + media;
+    }
+
+    public double modificarMedia(double media){
+       return this.media = media;
     }
     
-    
+    public String modificarEstatuto(String estatuto){
+        return this.estatuto = estatuto;
+    }
     
     public String getEstatuto() {
         return estatuto;

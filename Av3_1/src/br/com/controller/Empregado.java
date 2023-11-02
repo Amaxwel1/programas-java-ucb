@@ -8,12 +8,19 @@ package br.com.controller;
  *
  * @author Alexm
  */
-public class Empregado extends Pessoa {
-    private double salario;
+public abstract class Empregado extends Pessoa {
+    protected double salario;
 
-    public double fixarSalario(Empregado e1){
-        return salario;
+    public Empregado(String nome) {
+        this.setNome(nome);
     }
+
+    @Override
+    public String toString() {
+        return "Empregado - "+ getNome() + "\nSalario: " + salario;
+    }
+   
+    public abstract double fixarSalario(String categoria);
     
     public double getSalário() {
         return salario;
