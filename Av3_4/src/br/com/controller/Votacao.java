@@ -8,30 +8,30 @@ package br.com.controller;
  *
  * @author Alexm
  */
-public class Votacao extends Funcionario {
-    private int votos44 = 0, votos40 = 0, numFunc = 0;
+public class Votacao extends Pessoa {
+    private int votosJava = 0, votosC = 0, numPessoas = 0;
     
     @Override
     public void votar(){
-        votos40++;
-        numFunc++;   
+        votosJava++;
+        numPessoas++;   
     }
     
-    public void votar(int votos44){
-        votos44 = this.votos44++;
-        numFunc++;
+    public void votar(int votosC){
+        votosC = this.votosC++;
+        numPessoas++;
     }
     
-    public int getVotos44() {
-        return votos44;
+    public int getVotosC() {
+        return votosC;
     }
 
-    public int getVotos40() {
-        return votos40;
+    public int getVotosJava() {
+        return votosJava;
     }
 
     public int getNumFunc() {
-        return numFunc;
+        return numPessoas;
     }
     
 }

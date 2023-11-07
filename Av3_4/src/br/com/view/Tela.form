@@ -30,29 +30,10 @@
                       <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="116" max="-2" attributes="0"/>
-                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Group type="102" attributes="0">
-                              <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jTmatricula" max="32767" attributes="0"/>
-                          </Group>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jLabel3" alignment="1" min="-2" max="-2" attributes="0"/>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="132" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jRvotar1" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jRvotar2" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jBcalcularVoto" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
+                      <EmptySpace min="-2" pref="254" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jRvotar1" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jRvotar2" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
@@ -60,14 +41,37 @@
                       <Component id="jBfinalizar" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLresultvotos40" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLresultvotos44" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLresultvotosJava" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLresultvotosC" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="jLmaisvotos" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="jLqtdfunc" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="116" max="-2" attributes="0"/>
+                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
+                      <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="jTmatricula" min="-2" pref="188" max="-2" attributes="0"/>
+                  </Group>
               </Group>
               <EmptySpace pref="41" max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="125" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Component id="jBcalcularVoto" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="210" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
           </Group>
       </Group>
     </DimensionLayout>
@@ -85,18 +89,18 @@
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+              <Component id="jRvotar1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jRvotar2" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="jBcalcularVoto" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
                   <Group type="102" attributes="0">
-                      <Component id="jRvotar1" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLresultvotosJava" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jRvotar2" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jBcalcularVoto" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jLresultvotos40" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jLresultvotos44" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLresultvotosC" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jLmaisvotos" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
@@ -130,7 +134,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Segoe UI" size="14" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Escolha uma das op&#xe7;&#xf5;es para votar na jornada de trabalho"/>
+        <Property name="text" type="java.lang.String" value="Escolha a melhor linguagem para trabalhar"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JRadioButton" name="jRvotar1">
@@ -138,7 +142,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Segoe UI" size="14" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="40 Horas"/>
+        <Property name="text" type="java.lang.String" value="JAVA"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JRadioButton" name="jRvotar2">
@@ -146,7 +150,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Segoe UI" size="14" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="44 Horas"/>
+        <Property name="text" type="java.lang.String" value="C"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jBcalcularVoto">
@@ -171,7 +175,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Segoe UI" size="14" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Digite sua matricula para votar: "/>
+        <Property name="text" type="java.lang.String" value="Digite o seu CPF para votar: "/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="jTmatricula">
@@ -193,14 +197,14 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBfinalizarActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLresultvotos40">
+    <Component class="javax.swing.JLabel" name="jLresultvotosJava">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Quantidade de votos em (40 horas): "/>
+        <Property name="text" type="java.lang.String" value="Quantidade de votos em (JAVA): "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLresultvotos44">
+    <Component class="javax.swing.JLabel" name="jLresultvotosC">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Quantidade de votos em (44 horas): "/>
+        <Property name="text" type="java.lang.String" value="Quantidade de votos em (C): "/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLmaisvotos">

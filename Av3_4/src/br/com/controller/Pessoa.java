@@ -8,19 +8,19 @@ package br.com.controller;
  *
  * @author Alexm
  */
-public class Funcionario {
-    private String matricula;
+public class Pessoa {
+    private String cpf;
     
     public void votar(){
         System.out.println("Votando!");
     }
     
-    public String getMatricula() {
-        return matricula;
+    public String getCpf() {
+        return cpf;
     }
 
-    public void setMatricula(String matricula) {
-        this.matricula = matricula;
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
     }
     
 }
